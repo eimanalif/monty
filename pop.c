@@ -1,4 +1,6 @@
 #include "monty.h"
+
+
 /**
  * e_pop - prints top
  * Description: prints top
@@ -6,6 +8,8 @@
  * @counter: line_number
  * Return: void
 */
+
+
 void e_pop(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
@@ -21,6 +25,6 @@ void e_pop(stack_t **head, unsigned int counter)
 
 	h = *head;
 	*head = h->next;
-	
+
 	free(h);
 }
